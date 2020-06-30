@@ -1,0 +1,96 @@
+:root {
+  --bg-color: linear-gradient(
+    90deg,
+    rgba(200, 235, 70, 1) 0%,
+    rgba(68, 155, 235, 1) 50%
+  );
+  --bg-fallback: rgb(68, 155, 235);
+  --font-family-title: "Museo Moderno", "Arial", sans-serif;
+  --font-family-body: "Raleway", "Arial", sans-serif;
+}
+
+html {
+  background-color: #eee;
+}
+
+.main-header {
+  display: flex;
+}
+
+.main-header .logo-box {
+  float: left;
+  width: 50%;
+}
+
+.main-header .nav-bar {
+  margin-right: 1rem;
+  margin-top: 2rem;
+  float: right;
+  width: 75%;
+}
+
+.blob {
+  position: fixed;
+  top: -50px;
+  left: -70px;
+}
+
+.image {
+  position: fixed;
+  margin-left: 1rem;
+  width: 10em;
+  max-width: 10em;
+}
+
+.responsive-article {
+  display: flex;
+  vertical-align: middle;
+}
+
+.shoe-box-image {
+  float: left;
+  display: grid;
+  margin-left: 2rem;
+  grid-template-rows: 1fr;
+  grid-template-areas: shoe;
+  margin-top: 5em;
+}
+
+.shoe-box-item {
+  grid-area: shoe;
+}
+
+.shoe-box-text {
+  vertical-align: middle;
+  float: right;
+  width: 50%;
+  margin-top: 5em;
+}
+
+.flex-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: auto;
+}
+
+.flex-item {
+  background-color: #a1a1a1;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.page-footer {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  border-top: solid #444 0.001em;
+  width: 90%;
+  padding-bottom: 1em;
+}
+
+.flex-container.footer {
+  background-image: url("/img/");
+  float: right;
+}
