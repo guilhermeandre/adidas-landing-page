@@ -210,8 +210,8 @@ img.increase-size {
 @media (min-width: 320px) and (max-width: 480px) {
   
   header {
-    background-color: var(--col-on-accent-1);
-    /* background-color: var(--background-gradient); */
+    background-color: var(--col-on-accent-2);
+    /* background-image: var(--background-gradient);  */
     height: 6em;
   }
   .fa.fa-bars {
@@ -223,7 +223,7 @@ img.increase-size {
   }
   .flex-container {
     display: none;
-    background-color: darkkhaki;
+    
   }
   
   .blob {
@@ -277,10 +277,16 @@ img.increase-size {
   }
 
   .page-footer {
+    background-color: var(--col-on-accent-1);
+    background-image: none;
     margin-top: 3.1rem ;
     position: fixed;
-    left: 1.2em;
-  };
+  }
+
+  .footer {
+    margin-top: 1.5rem;
+    margin-left: 6rem;
+  }
 
 
 }
