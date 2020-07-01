@@ -15,7 +15,11 @@
 }
 
 html {
-  background-color: #eee;
+  background:
+radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #fff 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
+radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, #fff 10px, rgba(96, 16, 48, 0) 11px),
+#fafafad8;
+background-size: 20px 20px;
 }
 
 header {
@@ -46,6 +50,10 @@ h4 {
 
 button {
   outline: none;
+}
+
+img.increase-size {
+  max-width: 150%;
 }
 
 .preorder-button {
@@ -114,7 +122,7 @@ button {
 .blob {
   position: fixed;
   top: -50px;
-  left: -70px;
+  left: -68px;
 }
 
 .image {
@@ -130,13 +138,17 @@ button {
 }
 
 .shoe-box-image {
-  min-width: 35em;
   float: left;
+  width: 50%;
   display: grid;
-  margin-left: 15rem;
+  margin-left: 5rem;
   grid-template-rows: 1fr;
   grid-template-areas: "shoe";
   margin-top: 5em;
+}
+
+.increase-size {
+  width: 88%;
 }
 
 .shoe-box-item {
@@ -145,7 +157,7 @@ button {
 
 .shoe-box-text {
   float: right;
-  width: 25%;
+  width: 50%;
   margin-top: 13em;
   margin-left: 8em;
 }
@@ -169,7 +181,6 @@ button {
 }
 
 .page-footer {
-  margin-top: 6em;
   float: right;
   background-image: url("/img/footer-blob.png");
   background-repeat: no-repeat;
@@ -191,4 +202,3 @@ button {
 .footer-item:hover {
   filter: invert(66%) sepia(38%) saturate(252%) hue-rotate(120deg) brightness(85%) contrast(87%);
 }
-
