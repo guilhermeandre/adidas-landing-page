@@ -1,32 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap');
+
 :root {
-  --bg-color: linear-gradient(
-    90deg,
-    rgba(200, 235, 70, 1) 0%,
-    rgba(68, 155, 235, 1) 50%
-  );
-  --bg-fallback: rgb(68, 155, 235);
-  --font-family-title: "Museo Moderno", "Arial", sans-serif;
+  --background-fallback:  rgb(68,155,235);
+  --background-gradient: linear-gradient(90deg, rgba(157,201,178,1) 0%, rgba(68,155,235,1) 100%);
+  --font-family-title: "MuseoModerno", "Arial", sans-serif;
   --font-family-body: "Raleway", "Arial", sans-serif;
+  --col-on-accent-1: #4e5c75;
+  --col-on-accent-2: #8bc4ba;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
 }
 
 html {
   background-color: #eee;
 }
 
-.main-header {
+header {
   display: flex;
 }
 
-.main-header .logo-box {
+h2, h3{
+  font-family: var(--font-family-title);
+  color: var(--col-on-accent-1);
+}
+
+h2 {
+  font-size: 5em;
+  color: var(--col-on-accent-1);
+
+}
+
+h3 {
+  font-size: 3.35em;
+  margin-bottom: 0.3em;
+}
+
+h4 {
+  font-size: 1.25em;
+  margin-bottom: 0.7em;
+  color: var(--col-on-accent-2);
+}
+
+button {
+  outline: none;
+}
+
+.preorder-button {
+  background-color: var(--background-fallback);
+  background-image: var(--background-gradient);
+  border-radius: 1em;
+  border-style: none;
+  width: 15em;
+  height: 2em;
+  color: white;
+  font-weight: 700;
+}
+
+.preorder-button:hover, .login-button:hover {
+  filter:saturate(2);
+  cursor: pointer;
+}
+
+.login-button {
+  background-color: var(--background-fallback);
+  background-image: var(--background-gradient);
+  border-radius: 0.5em;
+  border-style: none;
+  width: 7em;
+  height: 2em;
+  color: white;
+  font-weight: 700;
+}
+
+.search {
+  background-color: var(--background-fallback);
+  background-image: var(--background-gradient);
+  border-radius: 1em;
+  padding-left: 1em;
+  width: 15em;
+  height: 2em;
+  border-style: none;
+  opacity: 0.7;
+  outline: none;
+  color: #fff;
+}
+
+#search-icon {
+  position: relative;
+  z-index: 1;
+  left: -25px;
+  top: 1px;
+  color: #fff;
+  cursor:pointer;
+  width: 0;
+}
+
+.logo-box {
   float: left;
   width: 50%;
 }
 
-.main-header .nav-bar {
-  margin-right: 1rem;
+.nav-bar {
+  margin-right: 3rem;
   margin-top: 2rem;
   float: right;
-  width: 75%;
+  width: 95%;
+  
 }
 
 .blob {
@@ -37,8 +119,8 @@ html {
 
 .image {
   position: fixed;
+  margin-top: 0.3em;
   margin-left: 1rem;
-  width: 10em;
   max-width: 10em;
 }
 
@@ -48,11 +130,12 @@ html {
 }
 
 .shoe-box-image {
+  min-width: 35em;
   float: left;
   display: grid;
-  margin-left: 2rem;
+  margin-left: 15rem;
   grid-template-rows: 1fr;
-  grid-template-areas: shoe;
+  grid-template-areas: "shoe";
   margin-top: 5em;
 }
 
@@ -61,10 +144,10 @@ html {
 }
 
 .shoe-box-text {
-  vertical-align: middle;
   float: right;
-  width: 50%;
-  margin-top: 5em;
+  width: 25%;
+  margin-top: 13em;
+  margin-left: 8em;
 }
 
 .flex-container {
@@ -72,25 +155,40 @@ html {
   margin-right: auto;
   display: flex;
   width: auto;
+  align-items: center;
 }
 
 .flex-item {
-  background-color: #a1a1a1;
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem;
+  padding: 0.25rem;
+}
+
+.link {
+  color: var(--col-on-accent-2);
 }
 
 .page-footer {
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-between;
-  border-top: solid #444 0.001em;
-  width: 90%;
-  padding-bottom: 1em;
+  margin-top: 6em;
+  float: right;
+  background-image: url("/img/footer-blob.png");
+  background-repeat: no-repeat;
+  height: 8em;
+  width: 25em;
 }
 
-.flex-container.footer {
-  background-image: url("/img/");
-  float: right;
+.footer {
+  display: flex;
+  margin-top: 3.5em;
+  margin-left: 4em;
 }
+
+.footer-item {
+  padding: 0.5em;
+  filter: invert(98%) sepia(0%) saturate(816%) hue-rotate(63deg) brightness(117%) contrast(100%);
+}
+
+.footer-item:hover {
+  filter: invert(66%) sepia(38%) saturate(252%) hue-rotate(120deg) brightness(85%) contrast(87%);
+}
+
