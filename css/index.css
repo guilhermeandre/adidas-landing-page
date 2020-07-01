@@ -182,7 +182,7 @@ img.increase-size {
 
 .page-footer {
   float: right;
-  background-image: url("img/footer-blob.png");
+  background-image: url("./img/footer-blob.png");
   background-repeat: no-repeat;
   height: 8em;
   width: 25em;
@@ -276,17 +276,19 @@ img.increase-size {
   }
 
   .page-footer {
-    background-color: var(--col-on-accent-1);
     background-image: none;
     margin-top: 3.1rem ;
     position: fixed;
   }
 
   .footer {
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
     margin-left: 6rem;
   }
 
+  .footer-item {
+    filter: invert(58%) sepia(32%) saturate(478%) hue-rotate(158deg) brightness(94%) contrast(100%);
+  }
 
 }
 
