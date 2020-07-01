@@ -211,7 +211,6 @@ img.increase-size {
   
   header {
     background-color: var(--col-on-accent-2);
-    /* background-image: var(--background-gradient);  */
     height: 6em;
   }
   .fa.fa-bars {
