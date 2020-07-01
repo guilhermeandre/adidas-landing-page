@@ -202,3 +202,85 @@ img.increase-size {
 .footer-item:hover {
   filter: invert(66%) sepia(38%) saturate(252%) hue-rotate(120deg) brightness(85%) contrast(87%);
 }
+
+.fa.fa-bars {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  header {
+    background-color: var(--col-on-accent-1);
+    /* background-color: var(--background-gradient); */
+    height: 6em;
+  }
+  .fa.fa-bars {
+    display: block;
+    margin-left: 19rem;
+    margin-top: 1.5rem;
+    font-size: 3em;
+    color: white;
+  }
+  .flex-container {
+    display: none;
+    background-color: darkkhaki;
+  }
+  
+  .blob {
+     display: none;
+   }
+
+   .image {
+     margin-top: 1rem;
+     width: 6em;
+   }
+
+   .increase-size {
+     width: 150%
+   }
+
+   .responsive-article {
+     flex-direction: column;
+   }
+
+   .shoe-box-image {
+     margin-top: 2rem;
+     margin-left: 3rem;
+   }
+
+   .shoe-box-text {
+     text-align: center;
+     width: 100%;
+     flex-direction: column;
+     margin-top: 3rem;
+     margin-left: 0;
+    }
+
+   h2 {
+     font-size: 2.5rem;
+   }
+
+   h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .preorder-button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+  }
+
+  .page-footer {
+    margin-top: 3.1rem ;
+    position: fixed;
+    left: 1.2em;
+  };
+
+
+}
