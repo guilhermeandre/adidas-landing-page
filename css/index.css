@@ -182,7 +182,7 @@ img.increase-size {
 
 .page-footer {
   float: right;
-  background-image: url("./img/footer-blob.png");
+  background-image: url("../img/footer-blob.png");
   background-repeat: no-repeat;
   height: 8em;
   width: 25em;
